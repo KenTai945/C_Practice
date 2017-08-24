@@ -4,7 +4,7 @@ struct node{
 	int value;
 	struct node *next;
 };
-struct node *findtail(struct node *head)
+struct node *find_tail(struct node *head)
 {
     struct node *current_tail;
     
@@ -67,15 +67,26 @@ struct node *remove_tail_node(struct node *head){
 	precurrent->next = NULL;
 	return current; 
 }
-/*
-struct node *find_node(struct node *head,val){
-	struct node *current
-	
 
+struct node *find_node(struct node *head,int val){
+	struct node *current;//想一下？要是沒有這個點？？
+	current = head;
+
+	while(current->value != val){
+		current = current->next;		
+	}
+	if(current == NULL)
+	{
+		printf("");
+	}
+	else
+	{
+		return current; 
+	}
 }
-*/
+
 //struct node *remove_middle_node()
-void PrintALL(struct node *head){
+void print_all(struct node *head){
 
 	struct node *current;
 	current = head;
@@ -90,6 +101,7 @@ void PrintALL(struct node *head){
 int main(void){
 	//craete the node of head 
 	struct node *head;
+	struct node *findnode;
 	head =  malloc(sizeof(struct node));
 	if(head == NULL)
 	{
@@ -97,6 +109,8 @@ int main(void){
 	}
 	head->value = 0;
 	head->next = NULL;
+	
+	
 	//creatd the node tail
 	struct node *tail;
 	
@@ -108,15 +122,25 @@ int main(void){
 	tail->value = 1;
 	tail->next = NULL;
 	head->next = tail;
+	//craete the new node 
 	create_new_node(head,2);
 	create_new_node(head,3);
 	create_new_node(head,4);
+	//print out the all node
+	/*
 	printf("print out all of the node\n");	
     PrintALL(head);
+	find_node(head,3);
+	*/
+	//delete the node of head
 	printf("after delete head\n");
-	remove_head_node(head);
+	findnode = find_node(head,3);
+	printf("we want to find the node's value is %d\n",findnode->value);
+	
+	head = remove_head_node(head);
 	PrintALL(head);
 	printf("after delete tail\n");
+	//delete the node of the head
 	remove_tail_node(head);
 	PrintALL(head);
 	return 0;

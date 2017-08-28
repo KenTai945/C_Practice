@@ -1,9 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+
+
 struct node{
 	int value;
 	struct node *next;
 };
+
 struct node *find_tail(struct node *head)
 {
     struct node *current_tail;
@@ -35,7 +39,7 @@ void create_new_node(struct node *head,int val){
 	
 	tmp = malloc(sizeof(struct node));
 	tmp->value = val;
-	tail = findtail(head);
+	tail = find_tail(head);
 	//traserval to find tail;
 	/*
 	findtail(head);
@@ -53,7 +57,7 @@ struct node *remove_head_node(struct node *head){
 	
 	current = head->next; 
 	free(head);
-	PrintALL(current);
+	print_all(current);
 	return current;
 }
 struct node *remove_tail_node(struct node *head){
@@ -62,7 +66,7 @@ struct node *remove_tail_node(struct node *head){
 	struct node *precurrent;
 	
 	precurrent = head;
-	current = findtail(head);
+	current = find_tail(head);
 	precurrent = find_the_node_before_tail(head);
 	precurrent->next = NULL;
 	return current; 
@@ -77,7 +81,7 @@ struct node *find_node(struct node *head,int val){
 	}
 	if(current == NULL)
 	{
-		printf("");
+		printf("could not find the ball in the node");
 	}
 	else
 	{
@@ -138,10 +142,10 @@ int main(void){
 	printf("we want to find the node's value is %d\n",findnode->value);
 	
 	head = remove_head_node(head);
-	PrintALL(head);
+	print_all(head);
 	printf("after delete tail\n");
 	//delete the node of the head
 	remove_tail_node(head);
-	PrintALL(head);
+	print_tail(head);
 	return 0;
 }

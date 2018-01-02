@@ -12,14 +12,15 @@ int main(void)
 {
     int *a ;
     void *tmp;
-    printf("before malloc %p\n",a);
+    printf("before malloc the address of the poionter is %p\n",a);
     tmp = malloc(sizeof(a));
-    printf("malloc address %p\n", tmp);
+    printf("after the malloc the address of tmp is %p\n", tmp);
     a = tmp;
     printf("after malloc %p\n", a);
     *a = 1;
+	printf("assign pointer point to 1\n");
     printf("%d\n",*a);
-    printf("%p\n",tmp);                                                                                                                                              
-    return 0;
+    printf("the tmp address now is %p\n",tmp);                  
+   	return 0;
 }
 

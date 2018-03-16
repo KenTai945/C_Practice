@@ -25,8 +25,11 @@ int Length(struct node* head){
 
 struct node *find_tail_node(struct node *head)
 {
-	struct node *current = head; 
-	while(current->next != NULL)
+	struct node *current = head;
+	/*
+		上面的寫法比較好的是因為當==很有可能因為人為疏失被誤植為=，上者的寫法就會在 compile 階段出錯，這是一種透過 compiler 做 debug 的技巧。
+	*/ 
+	while(NULL != current->next)
 	{
 		current = current->next;
 	}	

@@ -13,6 +13,6 @@ int main(void)
 
    strcpy(str, "gitbook.net");
    val = atoi(str);
-   printf("String value = %s, Int value = %d", str, val);
+   printf("String value = %s, Int value = %d\n", str, val);
    return 0;
 }

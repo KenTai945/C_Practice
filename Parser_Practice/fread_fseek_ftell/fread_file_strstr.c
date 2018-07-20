@@ -1,6 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
+/*
+	Function
+	(1)strstr
+	(2)strchr
+	(3)fseek
+	(4)ftell
 
+
+	Target: 
+	(1)use the function fseek to get the sizeof file.txt and read from  last 1/10  of the code
+	(2) using the parser to search for the key word 
+	
+	Pending Function:
+	(1)?
+*/
 int main(void)
 {
 	FILE *fp; 

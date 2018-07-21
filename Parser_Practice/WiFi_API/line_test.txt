@@ -1,0 +1,24 @@
+line1:[28889.047857] hub 4-0:1.0: 2 ports detected 
+
+line2:[28889.381972] usb 3-1: new full-speed USB device number 2 using xhci_hcd
+
+line3:[28889.533199] usb 3-1: New USB device found, idVendor=046d, idProduct=c52f
+
+line4: [28889.533205] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+
+line5:[28889.533205] usb 3-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+
+line6:[28889.533214] usb 3-1: Manufacturer: Logitech
+
+line7:[28889.533210] usb 3-1: Product: USB Receiver
+
+line8:[28889.536421] hid-generic 0003:046D:C52F.0004: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:3e:00.0-1/input0
+
+line9:[28889.538271] input: fec 2188000.ethernet eth0: Link is Down
+
+line10:fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off
+
+
+Jul 18 20:01:04 ubuntu kernel: fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off
+Jul 18 20:01:32 ubuntu kernel: fec 2188000.ethernet eth0: Link is Down
+Jul 18 20:01:42 ubuntu kernel: fec 2188000.ethernet eth0: Link is Up - 100Mbps/Full - flow control off

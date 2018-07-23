@@ -1,6 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+
+
+
+
+
 int main(void)
 {
 	FILE *fp; 
@@ -8,9 +13,9 @@ int main(void)
 	size_t sz_fl;
 
 	//size_t medium_sz_fl;
-	char buffer[100];
+	char buffer[128];
 
-	char buffer_less[50];
+	char buffer_less[64];
 
 	fp = fopen("fread_file.txt","r");	
 	if (fp == NULL)

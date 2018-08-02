@@ -1,0 +1,23 @@
+Jul 23 02:53:48 ubuntu kernel: R8188EU: ERROR assoc success
+Jul 23 02:53:48 ubuntu kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wlx4c0fc716fbaf: link becomes ready
+Jul 23 02:54:32 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:54:33 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:54:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready
+Jul 23 02:55:02 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:05 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:08 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:10 ubuntu kernel: R8188EU: ERROR assoc success
+Jul 23 02:56:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready
+Jul 23 02:55:05 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:08 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:10 ubuntu kernel: R8188EU: ERROR assoc success
+Jul 23 02:57:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready
+Jul 23 02:57:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready
+Jul 23 02:55:05 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:08 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:10 ubuntu kernel: R8188EU: ERROR assoc success
+Jul 23 02:57:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready
+Jul 23 02:55:05 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:08 ubuntu kernel: R8188EU: ERROR indicate disassoc
+Jul 23 02:55:10 ubuntu kernel: R8188EU: ERROR assoc success
+Jul 23 02:57:58 ubuntu kernel: IPv6: ADDRCONF(NETDEV_UP): wlx4c0fc716fbaf: link is not ready

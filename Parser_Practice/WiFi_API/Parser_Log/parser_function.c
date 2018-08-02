@@ -13,17 +13,14 @@
 	(2) using the parser to search for the key word 
 	
 	Pending Function:
-	(1)
 */
-	
-
 
 /*
 	Don' forget to reset the position of fp                                   
 	Use the function of fseak &ftell to calculate the size of the file       
 */
-size_t size_ftell_fseek(FILE *file_ptr)
-{
+
+size_t size_ftell_fseek(FILE *file_ptr){
 	size_t sizeof_document;
 
 	fseek(file_ptr,0L,SEEK_END);                                                                                             
@@ -32,6 +29,10 @@ size_t size_ftell_fseek(FILE *file_ptr)
 	return sizeof_document;
 }
 
+static void check_parser(){
+	p = strstr (buffer_less,"link becomes ready");
+	return p;
+}
 int main(void)
 {
 	FILE *fp; 
@@ -88,15 +89,38 @@ int main(void)
     printf("%s/n",buffer);
 
     rewind(fp);
-    //use the function of fseek to modify the code to read the last several line
+    
+	//use the function of fseek to modify the code to read the last several line
     
     printf("\n printf the half of the document\n");
-    fseek(fp,-(sz_fl/2),SEEK_END); 
+    fseek(fp,-128,SEEK_END); 
     fread(buffer_less,sz_fl,1,fp);
-    
+	
     printf("%s/n",buffer_less);
-    
-    rewind(fp);
+
+	int cnt_fnd = 0;
+
+	char *p;
+
+	p = strstr (buffer_less,"link becomes ready");
+
+	int count = 0;
+	while(count = 5)
+	{	
+		if (p){
+			printf("found the link is ready");
+			break;
+		}
+		else{
+			sleep(0.5);
+			fseek(fp,-128,SEEK_END);
+			fread(buffer_less,sz_fl,1,fp);
+			int *ptr = check_parser(buffer_less);
+			x ++;
+			break; 
+		}
+	}
+	rewind(fp);
     fclose(fp);//Don't Forget
 
 	return 0;

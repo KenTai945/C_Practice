@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+	system: execute a shell command
+*/
 
 int main(int argc, char **argv)
 {

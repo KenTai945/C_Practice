@@ -1,2 +1,2 @@
 # C-code-Practice
-Practice
+## Practice fot c code

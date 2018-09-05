@@ -9,7 +9,8 @@
 
 void skip(char *msg)
 {
-	puts(msg+4);	
+	puts(msg+4);
+	printf("\n%s\n",(msg+4));	
 }
 
 

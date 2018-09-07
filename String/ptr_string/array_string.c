@@ -9,7 +9,7 @@ void printf_string(char *print_ssid)
 	printf("printf the pointer of print_ssid with p and result is %p\n",print_ssid); // what's the result?
 	printf("printf the pointer of print_ssid with s and the result is %s\n",print_ssid); // this is the string address
 	printf("print the string with for loop by character\n");	
-	for(char *ptr_count = print_ssid; *ptr_count != '\0';ptr_count++)
+	for(char *ptr_count = print_ssid; *ptr_count != '\0';ptr_count++)  // can work?
 	{
 		printf("%c",*ptr_count);
 	}
